@@ -13,7 +13,6 @@ export const setupServer = () => {
 
   app.use(express.json());
   app.use(cors());
-
   app.use(
     pino({
       transport: {
@@ -23,7 +22,6 @@ export const setupServer = () => {
   );
 
   app.use(router);
-
   app.use('*', notFoundHandler);
   app.use(errorHandler);
 

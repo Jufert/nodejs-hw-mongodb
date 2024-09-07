@@ -1,4 +1,4 @@
-export const ctrlWrapper = (controller) => {
+function ctrlWrapper(controller) {
     return async (req, res, next) => {
       try {
         await controller(req, res, next);
@@ -6,4 +6,5 @@ export const ctrlWrapper = (controller) => {
         next(err);
       }
     };
-  };
+  }
+  export { ctrlWrapper };
