@@ -10,8 +10,7 @@ import {
   export const registerUserController = async (req, res) => {
     const user = await registerUser(req.body);
   
-    res.send({
-      status: 201,
+    res.status(201).send({
       message: `Successfully registered a user!`,
       data: user,
     });
@@ -29,8 +28,7 @@ import {
       expires: new Date(Date.now() + DAYS),
     });
   
-    res.send({
-      status: 200,
+    res.status(200).send({
       message: 'Successfully logged in an user!',
       data: {
         accessToken: session.accessToken,
