@@ -27,7 +27,15 @@ export async function getContactsController(req, res) {
   res.send({
     status: 200,
     message: 'Successfully found contacts!',
-    data: contacts,
+    data: {
+      data: contacts.contacts,
+      page: contacts.page,
+      perPage: contacts.perPage,
+      totalItems: contacts.totalItems,
+      totalPages: contacts.totalPages,
+      hasNextPage: contacts.hasNextPage,
+      hasPreviousPage: contacts.hasPreviousPage,
+    },
   });
 }
 
