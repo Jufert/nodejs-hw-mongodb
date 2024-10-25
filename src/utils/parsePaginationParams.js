@@ -1,5 +1,5 @@
 function parseNumber(number, defaultValue) {
-    if (typeof maybeNumber !== 'string') {
+    if (typeof number !== 'string') {
       return defaultValue;
     }
   
