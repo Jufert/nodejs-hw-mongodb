@@ -1,11 +1,11 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Contacts app
+  title: Contacts Data base
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  description: This is a documentation of contacts app
+  description: This is a documentation of contacts data base
 tags:
   - name: Contacts
     description: Operations about users.
@@ -13,7 +13,7 @@ tags:
     description: Auth operations.
 servers:
   - url: http://127.0.0.1:3000
-  - url: https://nodejs-hw-mongodb1-w2m0.onrender.com
+  - url: https://nodejs-hw-mongodb-5-jhk5.onrender.com
 paths:
   /contacts:
     get:
