@@ -12,7 +12,6 @@ tags:
   - name: Auth
     description: Auth operations.
 servers:
-  - url: http://127.0.0.1:3000
   - url: https://nodejs-hw-mongodb-5-jhk5.onrender.com
 paths:
   /contacts:
